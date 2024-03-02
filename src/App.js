@@ -5,7 +5,10 @@ import './App.css';
 
 const Main = lazy(() => import(`./components/Main/Main.js`));
 
+
+
 class App extends Component {
+    data = {};
     state = {
         page: 'main',
     };
@@ -16,7 +19,8 @@ class App extends Component {
         }
     }
 
-    changePage(page) {
+    changePage(page, props={}) {
+        this.data = props;
         this.setState(page);
     }
 
@@ -24,7 +28,7 @@ class App extends Component {
         let Page = this.getPage(this.state.page);
 
         return (
-            <Page />
+            <Page data = {this.data} />
         );
     }
 }

@@ -18,9 +18,7 @@ function Head({ changePage }, props) {
 
     return (
         <div className='head'>
-            <div className='head__logo'>
-                <img onClick={() => navigate("/")}/>
-            </div>
+            <img className='head__logo' onClick={() => navigate("/")}/>
             <div className='head__time'>
                 {curTime.toLocaleTimeString()}
             </div>

@@ -1,3 +1,7 @@
+html, body {
+    margin: unset;
+    min-height: 100%;
+}
 .background {
     z-index: -1;
     position: fixed;

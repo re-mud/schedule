@@ -1,36 +1,22 @@
-import { useState } from 'react';
-import { Component } from 'react';
-import { lazy } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import './App.css';
 
-const Main = lazy(() => import(`./components/Main/Main.js`));
+const Home = React.lazy(() => import("./pages/Home/Home.js"));
+const NotFound = React.lazy(() => import("./pages/NotFound/NotFound.js"));
 
 
 
-class App extends Component {
-    data = {};
-    state = {
-        page: 'main',
-    };
-
-    getPage(namePage) {
-        switch (namePage) {
-            case 'main': return Main;
-        }
-    }
-
-    changePage(page, props={}) {
-        this.data = props;
-        this.setState(page);
-    }
-
-    render() {
-        let Page = this.getPage(this.state.page);
-
-        return (
-            <Page data = {this.data} />
-        );
-    }
+function App() {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </Router>
+    )
 }
 
 export default App;

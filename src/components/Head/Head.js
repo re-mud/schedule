@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import skoipt from './skoipt.png';
 import './Head.css';
 
-function Head({ changePage }, props) {
+function Head() {
     const [curTime, setCurTime] = useState(new Date());
     const navigate = useNavigate();
 

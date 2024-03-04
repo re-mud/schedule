@@ -1,0 +1,25 @@
+.navigation {
+    margin: 1em;
+    font-size: 3vw;
+    backdrop-filter: blur(0.2em);
+    border-radius: 0.25em;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.2em;
+    height: calc(100% - 4.9em);
+    width: 5em;
+}
+.navigation__container {
+    overflow: overlay;
+    height: 100%;
+    width: 100%;
+}
+.navigation__container::-webkit-scrollbar {
+    width: 0.2em;
+}
+.navigation__container::-webkit-scrollbar-track {
+    background: unset;
+}
+.navigation__container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1em;
+}

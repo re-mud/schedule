@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-function NotFound({ changePage }, props) {
+function NotFound() {
     const navigate = useNavigate();
 
     return (

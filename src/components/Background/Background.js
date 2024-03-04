@@ -4,18 +4,19 @@ import './Background.css';
 
 
 function Background() {
-    const [bgColor, setBgColor] = useState({"r": 0, "g": 0, "b": 255});
-
-    let rgb = {"r": 0, "g": 0, "b": 255}
+    const maxValue = 120;
+    const contrast = 60; // must <255-maxValue
+    const [bgColor, setBgColor] = useState({"r": 0, "g": maxValue, "b": maxValue});
+    let rgb = {"r": 0, "g": maxValue, "b": maxValue}
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if      (rgb.r < 255 && rgb.b > 0 && rgb.g == 0) {rgb.r++;rgb.b--;}
-            else if (rgb.g < 255 && rgb.r > 0)               {rgb.r--;rgb.g++;}
-            else                                             {rgb.g--;rgb.b++;}
+            if      (rgb.b == maxValue && rgb.r < maxValue) {rgb.r++;rgb.g--;}
+            else if (rgb.r == maxValue && rgb.g < maxValue) {rgb.g++;rgb.b--;}
+            else                                            {rgb.b++;rgb.r--;}
 
             setBgColor({"r": rgb.r, "g": rgb.g, "b": rgb.b});
-        }, 500);
+        }, 1000);
       
         return () => {
             clearInterval(interval);
@@ -23,7 +24,10 @@ function Background() {
     }, []);
 
     return (
-        <div className="background" style={{'--bg-color-1': `rgb(${bgColor.r}, ${bgColor.g}, ${bgColor.b})`, '--bg-color-2': `rgb(${bgColor.b}, ${bgColor.r}, ${bgColor.g})`}}>
+        <div className="background" style={{
+                '--bg-color-1': `rgb(${bgColor.r}, ${bgColor.g}, ${bgColor.b})`, 
+                '--bg-color-2': `rgb(${bgColor.r+contrast}, ${bgColor.g+contrast}, ${bgColor.b+contrast})`
+        }}>
           <div className="background__bg background__bg--1"></div>
           <div className="background__bg background__bg--2"></div>
           <div className="background__bg background__bg--3"></div>

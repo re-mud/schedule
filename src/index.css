@@ -1,6 +1,9 @@
 html, body {
-    margin: unset;
     min-height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
 }
 .background {
     z-index: -1;

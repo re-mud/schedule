@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import skoipt from './skoipt.png';
 import './Head.css';
 
 function Head({ changePage }, props) {
@@ -18,7 +19,7 @@ function Head({ changePage }, props) {
 
     return (
         <div className='head'>
-            <img className='head__logo' onClick={() => navigate("/")}/>
+            <img src={skoipt} className='head__logo' onClick={() => navigate("/")}/>
             <div className='head__time'>
                 {curTime.toLocaleTimeString()}
             </div>

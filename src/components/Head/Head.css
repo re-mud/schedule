@@ -1,19 +1,20 @@
 .head {
     width: 100%;
     font-size: 3vw;
-    height: 1.5em;
-    background-color: white;
+    height: 2.5em;
     backdrop-filter: blur(0.2em);
     border-bottom-right-radius: 0.25em;
     border-bottom-left-radius: 0.25em;
     background-color: rgba(255, 255, 255, 0.05);
 }
 .head__time {
-    margin-top: 0.125em;
-    margin-right: 0.25em;
+    margin-top: 0.5em;
+    margin-right: 0.75em;
     float: right;
     font-family: monospace;
 }
 .head__logo {
-    width: 2em;
+    margin-left: calc(50% - 2.45em);
+    height: 2em;
+    margin-top: 0.125em;
 }

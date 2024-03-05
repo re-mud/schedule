@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import './Navigation.css';
 import news from './news.svg';
-import lessons from './lessons.png';
-import schedule from './schedule.png';
+import lessons from './lessons.svg';
+import schedule from './schedule.svg';
 
 
 

@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import skoipt from './skoipt.png';
-import weather from './weather.png';
+import weather from './weather.svg';
 import './Head.css';
 
 function Head() {

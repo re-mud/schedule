@@ -7,6 +7,7 @@
     padding: 0.2em;
     height: calc(100% - 4.5em);
     width: 4em;
+    float: left;
 }
 .navigation__container {
     padding-top: 0.75em;

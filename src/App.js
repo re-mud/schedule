@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import './App.css';
 
 import Background from "./components/Background/Background";
+import Head from "./components/Head/Head";
+import Navigation from "./components/Navigation/Navigation";
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 
@@ -11,13 +13,18 @@ import NotFound from "./pages/NotFound/NotFound";
 function App() {
     return (
         <div className='app'>
-            <Background />
             <Router>
-                <Routes>
-                    <Route path="/" element={<Home />} />
+                <Head />
+                <Background />
+                <Navigation />
+                
+                <div className='app__container'>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
 
-                    <Route path="*" element={<NotFound />} />
-                </Routes>
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </div>
             </Router>
         </div>
     )

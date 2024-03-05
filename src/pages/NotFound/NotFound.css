@@ -1,7 +1,9 @@
 .not-found {
-    margin-top: 1em;
+    display: inline-block;
+    padding: 1em;
     font-size: 2em;
     text-align: center;
+    width: calc(100% - 2em);
 }
 
 h1 {

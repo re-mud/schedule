@@ -1,8 +1,8 @@
-import Head from '../../components/Head/Head';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import './Home.css';
+import Head from '../../components/Head/Head';
 import Navigation from '../../components/Navigation/Navigation';
+import './Home.css';
 
 
 

@@ -3,18 +3,38 @@
     font-size: 3vw;
     height: 2.5em;
     backdrop-filter: blur(0.2em);
-    border-bottom-right-radius: 0.25em;
-    border-bottom-left-radius: 0.25em;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
     background-color: rgba(255, 255, 255, 0.1);
 }
-.head__time {
+.head__logo {
+    margin-left: calc(50% - 6.3em);
+    height: 2em;
+    margin-top: 0.125em;
+}
+.head__date-container {
+    font-size: 0.75em;
     margin-top: 0.5em;
     margin-right: 0.75em;
     float: right;
-    font-family: monospace;
+    text-align: center;
 }
-.head__logo {
-    margin-left: calc(50% - 2.45em);
-    height: 2em;
-    margin-top: 0.125em;
+.head__time {
+
+}
+.head__date {
+    font-size: 0.5em;
+}
+.head__weather {
+    display:grid;
+    text-align: center;
+    margin: 0.5em;
+    margin-left: 2.45em;
+    float: left;
+}
+.head__weather-icon {
+    width: 1em;
+}
+.head__temperature {
+    font-size: 0.5em;
 }

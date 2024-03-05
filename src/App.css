@@ -2,6 +2,7 @@
     height: 100%;
 }
 .app__container {
+    backdrop-filter: blur(1.5625em);
     font-size: 1vw;
     margin-top: 2.25em;
     margin-left: 18em;

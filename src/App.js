@@ -7,6 +7,7 @@ import Head from "./components/Head/Head";
 import Navigation from "./components/Navigation/Navigation";
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
+import News from "./pages/News/News"
 
 
 
@@ -17,10 +18,12 @@ function App() {
                 <Head />
                 <Background />
                 <Navigation />
-                
+
                 <div className='app__container'>
                     <Routes>
                         <Route path="/" element={<Home />} />
+
+                        <Route path="/news" element={<News />} />
 
                         <Route path="*" element={<NotFound />} />
                     </Routes>

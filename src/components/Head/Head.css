@@ -2,7 +2,7 @@
     width: 100%;
     font-size: 3vw;
     height: 2.5em;
-    backdrop-filter: blur(0.2em);
+    backdrop-filter: blur(1.5625em);
     border-bottom-right-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
     background-color: rgba(255, 255, 255, 0.1);

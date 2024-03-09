@@ -1,0 +1,7 @@
+.calls {
+    width: fit-content;
+    height: 800px;
+}
+.calls__image {
+    height: 100%;
+}

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import './App.css';
 
@@ -8,6 +7,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import News from "./pages/News/News"
+import Calls from "./pages/Calls/Calls"
 
 
 
@@ -23,8 +23,8 @@ function App() {
                     <div className='app__pack'>
                         <Routes>
                             <Route path="/" element={<Home />} />
-
                             <Route path="/news" element={<News />} />
+                            <Route path="/calls" element={<Calls />} />
 
                             <Route path="*" element={<NotFound />} />
                         </Routes>

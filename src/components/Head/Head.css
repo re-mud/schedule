@@ -1,41 +1,40 @@
 .head {
     width: 100%;
-    font-size: 3vw;
-    height: 2.5em;
-    backdrop-filter: blur(1.5625em);
-    border-bottom-right-radius: 0.5em;
-    border-bottom-left-radius: 0.5em;
+    height: 150px;
+    backdrop-filter: blur(11px);
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
     background-color: rgba(255, 255, 255, 0.1);
     display: inline-block;
 }
 .head__logo {
-    margin-left: calc(50% - 6.3em);
-    height: 2em;
-    margin-top: 0.125em;
+    margin-left: calc(50% - 325px);
+    width: 250px;
+    height: 100px;
+    margin-top: 25px;
 }
 .head__date-container {
-    font-size: 0.75em;
-    margin-top: 0.5em;
-    margin-right: 0.75em;
+    margin-top: 32px;
+    margin-right: 64px;
     float: right;
     text-align: center;
 }
 .head__time {
-
+    font-size: 48px;
 }
 .head__date {
-    font-size: 0.5em;
+    font-size: 24px;
 }
 .head__weather {
-    display:grid;
+    display: grid;
     text-align: center;
-    margin: 0.5em;
-    margin-left: 2.45em;
+    margin-top: 18px;
+    margin-left: 125px;
     float: left;
 }
 .head__weather-icon {
-    width: 1em;
+    width: 75px;
 }
 .head__temperature {
-    font-size: 0.5em;
+    font-size: 32px;
 }

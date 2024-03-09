@@ -1,13 +1,21 @@
 .app {
+    font-size: 24px;
     height: 100%;
 }
 .app__container {
-    backdrop-filter: blur(1.5625em);
-    font-size: 1vw;
-    margin-top: 2.25em;
-    margin-left: 18em;
-    border-radius: 1.5em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 150px;
+    left: 288px;
+    width: calc(100% - 288px);
+    height: calc(100% - 150px);
+}
+.app__pack {
+    backdrop-filter: blur(11px);
+    border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.1);
-    width: 80vw;
-    height: calc(100% - 12.3vw);
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
 }

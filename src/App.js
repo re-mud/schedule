@@ -20,13 +20,15 @@ function App() {
                 <Navigation />
 
                 <div className='app__container'>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
+                    <div className='app__pack'>
+                        <Routes>
+                            <Route path="/" element={<Home />} />
 
-                        <Route path="/news" element={<News />} />
+                            <Route path="/news" element={<News />} />
 
-                        <Route path="*" element={<NotFound />} />
-                    </Routes>
+                            <Route path="*" element={<NotFound />} />
+                        </Routes>
+                    </div>
                 </div>
             </Router>
         </div>

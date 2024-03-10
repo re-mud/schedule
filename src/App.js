@@ -22,9 +22,9 @@ function App() {
                 <div className='app__container'>
                     <div className='app__pack'>
                         <Routes>
-                            <Route path="/" element={<Home />} />
-                            <Route path="/news" element={<News />} />
-                            <Route path="/calls" element={<Calls />} />
+                            <Route path="schedule/" element={<Home />} />
+                            <Route path="schedule/news" element={<News />} />
+                            <Route path="schedule/calls" element={<Calls />} />
 
                             <Route path="*" element={<NotFound />} />
                         </Routes>

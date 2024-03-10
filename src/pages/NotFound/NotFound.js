@@ -13,7 +13,7 @@ function NotFound() {
                 <title>404 страница не найдена</title>
             </Helmet>
             <h1>404 страница не найдена</h1>
-            <span onClick={() => navigate('/')}>главная страница</span>
+            <span onClick={() => navigate('/schedule')}>главная страница</span>
         </div>
     );
 }

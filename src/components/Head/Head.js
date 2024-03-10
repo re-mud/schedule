@@ -56,7 +56,7 @@ function Head() {
 
     return (
         <div className='head'>
-            <img src={skoipt} className='head__logo' onClick={() => navigate("/")}/>
+            <img src={skoipt} className='head__logo' onClick={() => navigate("/schedule")}/>
             <div className='head__weather'>
                 <img src={weather} className='head__weather-icon'/>
                 <div className='head__temperature'>{curTemp}</div>

@@ -1,7 +1,8 @@
 .calls {
     width: fit-content;
-    height: 800px;
+    height: fit-content;
 }
 .calls__image {
-    height: 100%;
+    max-width: 100%;
+    max-height: calc(100vh - 210px);
 }

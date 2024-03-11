@@ -1,2 +1,2 @@
 # Visit our website
-[https://re-mud.github.io/schedule/](Site)
+[Site](https://re-mud.github.io/schedule/)

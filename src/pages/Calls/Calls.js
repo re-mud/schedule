@@ -4,7 +4,7 @@ import calls from "./calls.png";
 
 function Calls() {
     return (
-        <div className="calls">
+        <div className="calls-container">
             <Helmet>
                 <title>Расписание звонков</title>
             </Helmet>

@@ -1,20 +1,19 @@
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import './Home.css';
+import './Schedule.css';
 
 
 
-function Home() {
+function Schedule() {
     const navigate = useNavigate();
 
     return (
-        <div className='home'>
+        <div className='schedule'>
           <Helmet>
-            <title>Главная</title>
+            <title>Расписание</title>
           </Helmet>
-
         </div>
     );
 }
   
-export default Home;
+export default Schedule;

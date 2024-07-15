@@ -8,6 +8,7 @@ import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import News from "./pages/News/News"
 import Calls from "./pages/Calls/Calls"
+import Schedule from "./pages/Schedule/Schedule";
 
 
 
@@ -25,6 +26,7 @@ function App() {
                             <Route path="schedule/" element={<Home />} />
                             <Route path="schedule/news" element={<News />} />
                             <Route path="schedule/calls" element={<Calls />} />
+                            <Route path="schedule/schedule" element={<Schedule />} />
 
                             <Route path="*" element={<NotFound />} />
                         </Routes>

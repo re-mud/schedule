@@ -1,26 +1,26 @@
 /* mobile */
-@media (max-width: 480px) {
+@media (max-width: 580px) {
     :root {
         --app-border-radius: 10px;
         --app-margin-block: 5px;
         --head-height: 100px;
         --head-size: 0.6;
         --navigation-size: 0.6;
-        --head-font-size: 20px;
+        --head-font-size: 30px;
         --navigation-width: 100px;
         --navigation-font-size: 0;
     }
 }
 
 /* pad */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 581px) and (max-width: 768px) {
     :root {
         --app-border-radius: 15px;
         --app-margin-block: 10px;
         --head-height: 100px;
         --head-size: 0.6;
         --navigation-size: 0.6;
-        --head-font-size: 20px;
+        --head-font-size: 30px;
         --navigation-width: 100px;
         --navigation-font-size: 0;
     }

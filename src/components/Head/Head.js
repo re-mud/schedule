@@ -4,15 +4,21 @@ import skoipt from './skoipt.png';
 import weather from './weather.svg';
 import './Head.css';
 
+
+
+const daysOfWeek = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
+const Months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+const proxy = "https://proxy.cors.sh/";
+const url = "https://pogoda.mail.ru/prognoz/salavat/";
+const apiKey = "temp_a591e999826f5d62a01b893c50ebc5f9";
+
+
+
 function Head() {
-    const daysOfWeek = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
-    const Months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
     const [curTime, setCurTime] = useState("00:00");
     const [curDate, setCurDate] = useState("Пн. 0 Январь");
-    const proxy = "https://proxy.cors.sh/";
-    const url = "https://pogoda.mail.ru/prognoz/salavat/";
-    const navigate = useNavigate();
     const [curTemp, setCurTemp] = useState("+0");
+    const navigate = useNavigate();
 
     const updateTime = () => {
         let today = new Date();
@@ -27,7 +33,7 @@ function Head() {
         let xhr = new XMLHttpRequest();
 
         xhr.open("GET", proxy + url, true)
-        xhr.setRequestHeader('x-cors-api-key', 'temp_a591e999826f5d62a01b893c50ebc5f9')
+        xhr.setRequestHeader('x-cors-api-key', apiKey)
         xhr.onload = function() {
             let htmlDoc = parser.parseFromString(xhr.responseText, 'text/html');
             let temp = htmlDoc.querySelector('.information__content__temperature')?.textContent ?? "0";

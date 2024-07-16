@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/schedule/static/css/main.efb39fe0.css",
-    "main.js": "/schedule/static/js/main.6f05810a.js",
+    "main.css": "/schedule/static/css/main.d3023778.css",
+    "main.js": "/schedule/static/js/main.ce8f64e8.js",
     "static/media/calls.png": "/schedule/static/media/calls.270662cd6c93edf2d268.png",
     "static/media/skoipt.png": "/schedule/static/media/skoipt.5543d1ec05ff7fa36741.png",
     "static/media/weather.svg": "/schedule/static/media/weather.7e57c66760c14925208472e4d2fd93c2.svg",
@@ -9,11 +9,11 @@
     "static/media/lessons.svg": "/schedule/static/media/lessons.911503b08ad0a7708a55c1e19823d23f.svg",
     "static/media/news.svg": "/schedule/static/media/news.65c149930a80fd9370f2bf8e214861db.svg",
     "index.html": "/schedule/index.html",
-    "main.efb39fe0.css.map": "/schedule/static/css/main.efb39fe0.css.map",
-    "main.6f05810a.js.map": "/schedule/static/js/main.6f05810a.js.map"
+    "main.d3023778.css.map": "/schedule/static/css/main.d3023778.css.map",
+    "main.ce8f64e8.js.map": "/schedule/static/js/main.ce8f64e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.efb39fe0.css",
-    "static/js/main.6f05810a.js"
+    "static/css/main.d3023778.css",
+    "static/js/main.ce8f64e8.js"
   ]
 }

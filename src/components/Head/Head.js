@@ -30,7 +30,7 @@ function Head() {
         xhr.setRequestHeader('x-cors-api-key', 'temp_a591e999826f5d62a01b893c50ebc5f9')
         xhr.onload = function() {
             let htmlDoc = parser.parseFromString(xhr.responseText, 'text/html');
-            let temp = htmlDoc.querySelector('.information__content__temperature').textContent;
+            let temp = htmlDoc.querySelector('.information__content__temperature')?.textContent ?? "0";
             setCurTemp(temp)
         };
         xhr.send()

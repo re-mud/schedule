@@ -1,3 +1,60 @@
+/* mobile */
+@media (max-width: 480px) {
+    :root {
+        --app-border-radius: 10px;
+        --app-margin-block: 5px;
+        --head-height: 100px;
+        --head-size: 0.6;
+        --navigation-size: 0.6;
+        --head-font-size: 20px;
+        --navigation-width: 100px;
+        --navigation-font-size: 0;
+    }
+}
+
+/* pad */
+@media (min-width: 481px) and (max-width: 768px) {
+    :root {
+        --app-border-radius: 15px;
+        --app-margin-block: 10px;
+        --head-height: 100px;
+        --head-size: 0.6;
+        --navigation-size: 0.6;
+        --head-font-size: 20px;
+        --navigation-width: 100px;
+        --navigation-font-size: 0;
+    }
+}
+
+/* laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+    :root {
+        --app-border-radius: 25px;
+        --app-margin-block: 30px;
+        --head-height: 120px;
+        --head-size: 0.8;
+        --head-font-size: 32px;
+        --navigation-size: 0.8;
+        --navigation-width: 200px;
+        --navigation-font-size: 0.8;
+    }
+}
+
+/* pc */
+@media (min-width: 1025px) {
+    :root {
+        --app-border-radius: 30px;
+        --app-margin-block: 38px;
+        --head-height: 150px;
+        --head-size: 1;
+        --head-font-size: 48px;
+        --navigation-size: 1;
+        --navigation-width: 250px;
+        --navigation-font-size: 1;
+    }
+}
+
+
 .app {
     font-size: 24px;
     height: 100%;
@@ -6,16 +63,15 @@
     position: absolute;
     display: flex;
     align-items: center;
-    top: 150px;
-    left: 288px;
-    width: calc(100% - 364px);
-    height: calc(100% - 226px);
-    padding: 38px;
+    left: calc(var(--navigation-width) + var(--app-margin-block));
+    width: calc(100% - var(--navigation-width) - 3 * var(--app-margin-block));
+    height: calc(100% - var(--head-height) - 2 * var(--app-margin-block));
+    padding: var(--app-margin-block);
 }
 .app__pack {
     overflow: hidden;
     backdrop-filter: blur(11px);
-    border-radius: 30px;
+    border-radius: var(--app-border-radius);
     background-color: rgba(255, 255, 255, 0.1);
     width: fit-content;
     max-width: 100%;

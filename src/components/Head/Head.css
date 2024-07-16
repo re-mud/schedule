@@ -1,40 +1,41 @@
 .head {
     width: 100%;
-    height: 150px;
+    height: var(--head-height);
     backdrop-filter: blur(11px);
-    border-bottom-right-radius: 45px;
-    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: calc(var(--app-border-radius) * 1.5);
+    border-bottom-left-radius: calc(var(--app-border-radius) * 1.5);
     background-color: rgba(255, 255, 255, 0.1);
     display: inline-block;
 }
 .head__logo {
-    margin-left: calc(50% - 325px);
-    width: 250px;
-    height: 100px;
-    margin-top: 25px;
+    margin-left: calc(50% - 325px * var(--head-size));
+    width: calc(250px * var(--head-size));
+    height: calc(100px * var(--head-size));
+    vertical-align: middle;
+    margin-top: calc(25px * var(--head-size));
 }
 .head__date-container {
-    margin-top: 32px;
+    margin-top: calc(32px * var(--head-size));
     margin-right: 64px;
     float: right;
     text-align: center;
 }
 .head__time {
-    font-size: 48px;
+    font-size: var(--head-font-size);
 }
 .head__date {
-    font-size: 24px;
+    font-size: calc(var(--head-font-size) / 2);
 }
 .head__weather {
     display: grid;
     text-align: center;
-    margin-top: 18px;
-    margin-left: 125px;
+    margin-top: calc(18px * var(--head-size));
+    margin-left: calc(125px * var(--head-size));
     float: left;
 }
 .head__weather-icon {
-    width: 75px;
+    width: calc(75px * var(--head-size));
 }
 .head__temperature {
-    font-size: 32px;
+    font-size: calc(32px * var(--head-size));
 }

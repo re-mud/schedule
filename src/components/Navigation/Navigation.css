@@ -1,11 +1,11 @@
 .navigation {
-    margin: 38px;
+    margin: var(--app-margin-block);
     backdrop-filter: blur(11px);
-    border-radius: 30px;
+    border-radius: var(--app-border-radius);
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
-    height: calc(100% - 266px);
-    width: 210px;
+    height: calc(100% - var(--head-height) - 2 * var(--app-margin-block) - 40px); /* head size, margin top and bottom, padding */
+    width: calc(var(--navigation-width) - 40px);
     float: left;
 }
 .navigation__container {
@@ -15,7 +15,6 @@
 }
 .navigation__section {
     text-align: center;
-    font-size: 40px;
     margin-top: 10px;
 }
 .navigation__section-icon {
@@ -30,7 +29,7 @@
     background: rgba(255, 255, 255, 0.2);
 }
 .navigation__section-text {
-    font-size: 32px;
+    font-size: calc(32px * var(--navigation-font-size));
 }
 .navigation__container::-webkit-scrollbar {
     width: 0;

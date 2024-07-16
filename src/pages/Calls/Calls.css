@@ -4,5 +4,5 @@
 }
 .calls__image {
     max-width: 100%;
-    max-height: calc(100vh - 210px);
+    max-height: calc(100vh - var(--head-height) - 2* var(--app-margin-block));
 }
